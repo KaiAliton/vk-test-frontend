@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+  </head>
+  <body>
+    <script>
+      const redirectUrl = location.href.replace(/\/+$/, '').replace(/^https:\/\/[^/]+/, '')
+      const baseUrl = '/vk-test-frontend'
+      location.replace(baseUrl + redirectUrl)
+    </script>
+  </body>
+</html>
